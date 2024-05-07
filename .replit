@@ -1,0 +1,15 @@
+modules = ["python-3.10:v18-20230807-322e88b"]
+run = "pip install -U python-jobspy && python ./examples/JobSpy_AllSites.py"
+
+[nix]
+channel = "stable-23_05"
+
+[unitTest]
+language = "python3"
+
+[gitHubImport]
+requiredFiles = [".replit", "replit.nix"]
+
+[deployment]
+run = ["sh", "-c", "pip install -U python-jobspy"]
+deploymentTarget = "cloudrun"
