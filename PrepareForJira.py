@@ -4,7 +4,7 @@ import pandas as pd
 df = pd.read_csv('jobs.csv')
 
 # Filter the DataFrame to include only remote jobs
-df = df[df['is_remote'] == True]
+#df = df[df['is_remote'] == True]
 
 def create_description(row):
     elements = [

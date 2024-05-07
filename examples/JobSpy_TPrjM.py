@@ -8,6 +8,7 @@ jobs: pd.DataFrame = scrape_jobs(
     results_wanted=25,  # be wary the higher it is, the more likey you'll get blocked (rotating proxy can help tho)
     country_indeed="USA",
     # proxy="http://jobspy:5a4vpWtj8EeJ2hoYzk@ca.smartproxy.com:20001",
+    is_remote=True,
 )
 
 # formatting for pandas

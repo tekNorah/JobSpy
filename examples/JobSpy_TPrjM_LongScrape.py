@@ -40,6 +40,7 @@ while len(all_jobs) < results_wanted:
                 country_indeed="USA",
                 offset=offset,
                 # proxy="http://jobspy:5a4vpWtj8EeJ2hoYzk@ca.smartproxy.com:20001",
+                is_remote=True,
             )
 
             # Add the scraped jobs to the list
