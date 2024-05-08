@@ -8,7 +8,6 @@ df = pd.read_csv('jobs.csv')
 
 def create_description(row):
     elements = [
-    f"**Remote**: {row['is_remote']}" if pd.notna(row['is_remote']) else "",
         f"**Job URL**: {row['job_url']}" if pd.notna(row['job_url']) else "",
         f"**Job URL Direct**: {row['job_url_direct']}" if pd.notna(row['job_url_direct']) else "",
         f"**Salary**: {row['min_amount']} - {row['max_amount']} {row['currency']}" if pd.notna(row['min_amount']) and pd.notna(row['max_amount']) and pd.notna(row['currency']) else "",
